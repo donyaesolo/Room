@@ -385,19 +385,19 @@ function fake(){
 		a.style.display = "inline";
 		console.log("right");
 		document.images["item3"].src = "images/harring.png";
-		a.removeEventListener("click", heyk);
+		a.removeEventListener("click", heykf);
 	}else if(harring == 2){
 		p.style.display = "none";
 		b.style.display = "inline";
 		document.images["item3"].src = "images/harring.png";
 		console.log("right");
-		b.removeEventListener("click", heyk);
+		b.removeEventListener("click", heykf);
 	} else{
 			m.style.display = "none";
 			c.style.display = "inline";
 			document.images["item3"].src = "images/harring.png";
 			console.log("right");
-		cs.removeEventListener("click", heyk);
+		cs.removeEventListener("click", heykf);
 	}
 }
 var off = 0;
