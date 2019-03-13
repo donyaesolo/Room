@@ -108,7 +108,7 @@ function randomn() {
 		f.classList.add("top");
 		c.addEventListener("click", heyk);
 		a.addEventListener("click", heykf);
-		a.removeEventListener("click", heyk);
+		a.removeEventListener("click", blank);
 		b.addEventListener("click", blank);
 		q = 1;
 		harring = 1;
@@ -356,16 +356,19 @@ function nextb(){
 		m.style.display = "none";
 		c.style.display = "inline";
 		document.images["item2"].src = "images/key.png";
+		c.removeEventListener("click", heyk);
 		}else if(q == 2){
 			alert("Maybe this is the key to the door");
 		n.style.display = "none";
 		a.style.display = "inline";
 		document.images["item2"].src = "images/key.png"
+		a.removeEventListener("click", heyk);
 	}else {
 		alert("Maybe this is the key to the door");
 		p.style.display = "none";
 		b.style.display = "inline";
 		document.images["item2"].src = "images/key.png";
+		b.removeEventListener("click", heyk);
 	}
 }
 
@@ -382,16 +385,19 @@ function fake(){
 		a.style.display = "inline";
 		console.log("right");
 		document.images["item3"].src = "images/harring.png";
+		a.removeEventListener("click", heyk);
 	}else if(harring == 2){
 		p.style.display = "none";
 		b.style.display = "inline";
 		document.images["item3"].src = "images/harring.png";
 		console.log("right");
+		b.removeEventListener("click", heyk);
 	} else{
 			m.style.display = "none";
 			c.style.display = "inline";
 			document.images["item3"].src = "images/harring.png";
 			console.log("right");
+		cs.removeEventListener("click", heyk);
 	}
 }
 var off = 0;
@@ -527,6 +533,9 @@ function reset() {
 	b.removeEventListener("click", heyk);
 	c.removeEventListener("click", heyk);
 	a.removeEventListener("click", heyk);
+	b.removeEventListener("click", heykf);
+	c.removeEventListener("click", heykf);
+	a.removeEventListener("click", heykf);
 	b.removeEventListener("click", blank);
 	c.removeEventListener("click", blank);
 	a.removeEventListener("click", blank);
