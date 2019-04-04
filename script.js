@@ -248,7 +248,7 @@ function instruct(){
 	i.classList.add("instructions");
 	i.style.display = "block";
 	backpack.style.display = "none";
-	text.innerHTML = "You finally made to the infamous laboratory, Now all you gotta do is get into the building.<br/> Click the arrows keys to explore";
+	text.innerHTML = "You finally made to the infamous laboratory, Now all you gotta do is get into the building.<br/> Click the arrows to explore";
 }
 
 // Timer runs out
