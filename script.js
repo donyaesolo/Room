@@ -24,8 +24,8 @@ function countdown(){
 			timer--;
 			time.innerHTML = timer;
 		}else {
-			timer--;
-			time.innerHTML = timer;
+			timer--; // subtract timer by one
+			time.innerHTML = timer; // prints it out
 		}
 	}
 }
@@ -56,7 +56,7 @@ function random() {
 	var o = document.getElementById("keyb");
 
 
-	rock = Math.floor(Math.random() * 3);
+	rock = Math.floor(Math.random() * 3); //Pick a random number
 	if (rock == 1){
 		document.images["rockc"].src ="images/rock.png";
 		c.addEventListener("click", hey);
@@ -108,7 +108,7 @@ function randomn() {
 		f.classList.add("top");
 		c.addEventListener("click", heyk);
 		a.addEventListener("click", heykf);
-		a.removeEventListener("click", blank);
+		a.removeEventListener("click", heyk);
 		b.addEventListener("click", blank);
 		q = 1;
 		harring = 1;
@@ -248,7 +248,7 @@ function instruct(){
 	i.classList.add("instructions");
 	i.style.display = "block";
 	backpack.style.display = "none";
-	text.innerHTML = "You finally made to the infamous laboratory, Now all you gotta do is get into the building";
+	text.innerHTML = "You finally made to the infamous laboratory, Now all you gotta do is get into the building.<br/> Click the arrows keys to explore";
 }
 
 // Timer runs out
@@ -356,19 +356,16 @@ function nextb(){
 		m.style.display = "none";
 		c.style.display = "inline";
 		document.images["item2"].src = "images/key.png";
-		c.removeEventListener("click", heyk);
 		}else if(q == 2){
 			alert("Maybe this is the key to the door");
 		n.style.display = "none";
 		a.style.display = "inline";
 		document.images["item2"].src = "images/key.png"
-		a.removeEventListener("click", heyk);
 	}else {
 		alert("Maybe this is the key to the door");
 		p.style.display = "none";
 		b.style.display = "inline";
 		document.images["item2"].src = "images/key.png";
-		b.removeEventListener("click", heyk);
 	}
 }
 
@@ -385,19 +382,16 @@ function fake(){
 		a.style.display = "inline";
 		console.log("right");
 		document.images["item3"].src = "images/harring.png";
-		a.removeEventListener("click", heykf);
 	}else if(harring == 2){
 		p.style.display = "none";
 		b.style.display = "inline";
 		document.images["item3"].src = "images/harring.png";
 		console.log("right");
-		b.removeEventListener("click", heykf);
 	} else{
 			m.style.display = "none";
 			c.style.display = "inline";
 			document.images["item3"].src = "images/harring.png";
 			console.log("right");
-		cs.removeEventListener("click", heykf);
 	}
 }
 var off = 0;
@@ -533,9 +527,6 @@ function reset() {
 	b.removeEventListener("click", heyk);
 	c.removeEventListener("click", heyk);
 	a.removeEventListener("click", heyk);
-	b.removeEventListener("click", heykf);
-	c.removeEventListener("click", heykf);
-	a.removeEventListener("click", heykf);
 	b.removeEventListener("click", blank);
 	c.removeEventListener("click", blank);
 	a.removeEventListener("click", blank);

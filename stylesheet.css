@@ -3,7 +3,11 @@ html, body{
 	padding: 0px;
 	overflow-y: hidden;
 }
-
+button {
+	font-size: 20px;
+	border-radius: 20px;
+	border: gold solid 4px;
+}
 
 
 
@@ -173,11 +177,21 @@ html, body{
 #busha{
 	cursor: help;
 }
+#busha:hover{
+	opacity: 0.9;
+}
+
 #bushb{
 	cursor: help;
 }
+#bushb:hover{
+	opacity: 0.9;
+}
 #bushc{
 	cursor: help;
+}
+#bushc:hover{
+	opacity: 0.9;
 }
 #paper{
 		cursor: help;
