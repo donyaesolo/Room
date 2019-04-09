@@ -330,7 +330,7 @@ function smash() {
 	if (rock == true){
 		document.images["window"].src ="images/broken.png";
 		alert("You broke the window open with a rock");
-		document.location.href = "https://ryandoherty1.github.io/crack_cocaine2/";
+		document.location.href = "https://ryandoherty1.github.io/Mad_Lab2/";
 		rock = false;
 		k = 0;
 	} else {
@@ -427,7 +427,7 @@ function door(){
 	if (key == true){
 		alert("You opened the door with the key");
 		document.images["door"].src ="images/open_door.png";
-		document.location.href = "https://ryandoherty1.github.io/crack_cocaine2/";
+		document.location.href = "https://ryandoherty1.github.io/Mad_Lab2/";
 		key = false;
 		q = 0;
 	} else if(off == 0 && offa == 0) {
